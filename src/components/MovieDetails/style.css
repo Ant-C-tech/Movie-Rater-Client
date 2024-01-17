@@ -1,0 +1,34 @@
+.movie-details {
+  padding: 10px;
+}
+
+.movie-details-content {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.movie-details-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #48c78e;
+  font-size: 24px;
+}
+
+.movie-details-content-description {
+  margin-bottom: 20px;
+}
+
+.movie-details-content-stars {
+  margin-bottom: 20px;
+}
+
+.movie-details-user-stars {
+  margin-bottom: 20px;
+}
+
+.star-icon {
+  color: #48c78e;
+}
+
+.user-rating-stars {
+  cursor: pointer;
+}

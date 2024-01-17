@@ -1,0 +1,34 @@
+.app {
+  height: 100vh;
+  max-height: 100vh;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+}
+
+.app-header {
+  height: 6vh;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.app-title {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.app-title-logo {
+  font-size: 32px;
+  color: #48c78e;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

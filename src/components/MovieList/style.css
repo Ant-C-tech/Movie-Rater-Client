@@ -1,0 +1,58 @@
+.movie-list-wrapper {
+  padding: 10px;
+}
+
+.movie-list-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #48c78e;
+  font-size: 24px;
+}
+
+.movie-list {
+  display: block;
+  margin: 10px 0;
+  padding-right: 30px;
+  overflow-y: auto;
+}
+
+/*customize scroll*/
+.movie-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.movie-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.movie-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.movie-list::-webkit-scrollbar-thumb:hover {
+  background: #48c78e;
+}
+
+.movie-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  list-style-type: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.movie-list-item-icon {
+  margin-right: 10px;
+  color: #48c78e;
+}
+
+.movie-controls {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}

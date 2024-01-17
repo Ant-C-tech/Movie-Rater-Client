@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Form*/
+input,
+textarea {
+  background-color: #ccc !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #48c78e !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6e6e6e !important;
+}
+
+/* MovieForm */
+.movie-form-wrapper {
+  padding: 10px;
+}
+
+.movie-form-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #48c78e;
+  font-size: 24px;
+}
+
+/* Button */
+
+.button-custom {
+  height: auto !important;
+
+  margin: 0 10px;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+
+  border-color: inherit !important;
+  border-width: 2px !important;
+
+  background-color: #ccc !important;
+
+  will-change: border-color;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.button-custom:hover {
+  border-color: #48c78e !important;
+}
+
+.button-custom:disabled:hover,
+.button-custom:disabled:focus {
+  border-color: inherit !important;
+}
+
+.button-success {
+  width: 40px !important;
+  height: 40px !important;
+
+  margin: 0 10px;
+
+  border-color: inherit !important;
+  border-radius: 50% !important;
+
+  will-change: border-color;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.button-success .button-icon {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-success:hover .button-icon {
+  transform: rotate(180deg);
+}
+
+.button-icon {
+  margin: 0 10px;
+}

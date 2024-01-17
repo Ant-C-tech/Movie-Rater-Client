@@ -1,0 +1,21 @@
+.nav-controls {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.nav-control {
+  margin: 0 10px;
+  color: #48c78e;
+  font-size: 22px;
+  text-decoration: none;
+  will-change: border-bottom;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+
+}
+
+.nav-control:hover {
+  color: #48c78e;
+  border-bottom: 1px solid #48c78e;
+}
