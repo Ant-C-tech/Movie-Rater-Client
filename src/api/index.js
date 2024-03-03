@@ -1,5 +1,5 @@
-const API_URL = 'http://127.0.0.1:8000/api';
-const AUTH_URL = 'http://127.0.0.1:8000/auth';
+const API_URL = 'http://192.168.1.76:8000/api';
+const AUTH_URL = 'http://192.168.1.76:8000/auth';
 
 export class API {
   static async getMovies() {
@@ -17,9 +17,9 @@ export class API {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Token ${token}`
+        Authorization: `Token ${token}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -34,9 +34,9 @@ export class API {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Token ${token}`
+        Authorization: `Token ${token}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -51,9 +51,9 @@ export class API {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Token ${token}`
+        Authorization: `Token ${token}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -68,7 +68,7 @@ export class API {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Token ${token}`
+        Authorization: `Token ${token}`,
       },
     });
 
@@ -85,7 +85,7 @@ export class API {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -101,7 +101,7 @@ export class API {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
